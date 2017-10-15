@@ -23,4 +23,5 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.jakewharton.threetenabp:threetenabp:1.0.5'
 }
