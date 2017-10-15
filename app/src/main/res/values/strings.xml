@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Bus Buddy</string>
+    <string name="choose_route">Choose from a list</string>
+    <string name="import_route">Import from a file</string>
 </resources>
