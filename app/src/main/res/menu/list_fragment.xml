@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_import_route"
+        android:alphabeticShortcut="o"
+        android:icon="@drawable/ic_open"
+        android:showAsAction="always"
+        android:title="@string/import_route" />
+</menu>
