@@ -1,0 +1,34 @@
+main activity
+	list of routes
+		go button for each
+		pressing the button sched for next bus at closest bus stop
+		can just consider closest stop at instant, or first bus you could catch (maybe walk to next stop)
+	each shows where bus is now
+		calculate based on time, or actually track the bus
+when you press the button
+	notification for leaving at x:xx
+	set an alarm for that time
+		at that point, sound alarm until notification is dismissed
+	or just give me a one time notification (e.g. vibrate the device a couple seconds)
+	^^ which one is a app-wide setting
+	notification has a button to cancel alarm, or push back one bus
+calculating the time
+	find closest bus stop via location api
+	options
+		hard coded offset (# of minutes)
+		hard coded speed (as the crow flies)
+		maps directions API https://developers.google.com/maps/documentation/directions/intro
+bus routes
+	some general online API
+	array of schedules
+		array of lat/lon and array of times
+			predefined list (json resources shipped with app)
+			user imports their own json
+
+
+app arch
+	data model stores routes
+	service handles notification and alarm, and location tracking
+	activity for selecting a route
+	activity/fragment for viewing a route
+	settings activity
